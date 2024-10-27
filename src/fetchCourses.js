@@ -17,8 +17,8 @@ const fetchCourses = async (subject, course) => {
         const preq = description.match(/Prerequisite[s]?:\s*(.*?)(\.)/);
         const core = description.match(/Corequisite[s]?:\s*(.*?)(\.)/);
 
-        preq && courses.prerequisites.push(...preq[1].split(";").map(item=>item.trim()));
-        core && courses.corequisites.push(...core[1].split(";").map(item=>item.trim()));
+        preq && courses.prerequisites.push(...preq[1].split(";").map(item => item.trim()));
+        core && courses.corequisites.push(...core[1].split(";").map(item => item.trim()));
         
         return courses;
     } catch (error) {
@@ -26,4 +26,4 @@ const fetchCourses = async (subject, course) => {
     }   
 }
 
-fetchCourses('CMPUT', '291').then((courses) => console.log(courses));
+export default fetchCourses;
