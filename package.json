@@ -8,7 +8,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "fetchCourses": "node src/fetchCourses.js"
+    "fetchCourses": "node src/fetchCourses.js",
+    "fetchRequirements": "node src/fetchRequirements.js"
   },
   "keywords": [],
   "author": "",
