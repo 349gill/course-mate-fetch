@@ -47,7 +47,7 @@ const fetchRequirements = async (year, program, major) => {
         const requirements = await axios.get("https://calendar.ualberta.ca" + requirements_link);
         $ = cheerio.load(requirements.data);
 
-        console.log($().text());
+        console.log($('body').text());
 
         return archive.data;
     } catch (error) {
