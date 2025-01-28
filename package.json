@@ -4,7 +4,7 @@
     "cheerio": "^1.0.0"
   },
   "name": "course-mate-fetch",
-  "description": "Scripts used in CourseMate. Used for scraping course information, program information, and course requirements from University of Alberta websites. Used in: https://github.com/349gill/course-mate",
+  "description": "Scripts used in https://github.com/349gill/course-mate",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
